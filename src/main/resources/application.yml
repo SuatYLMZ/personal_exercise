@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/personal_exercise
+    username: db_Suat
+    password: suatvsqoqo1997
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+server:
+  error:
+    include-binding-errors: always
+    include-message: always
+  port: 8080
